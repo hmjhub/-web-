@@ -1,0 +1,67 @@
+<!--prj_11_2.html-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标动作捕获与响应</title>
+		<style type="text/css">
+			form {
+				text-align: center;
+			}
+
+			div {
+				width: 400px;
+				height: 200px;
+				margin: 30px auto;
+				background-color: #00cc99;
+				text-align: center;
+			}
+
+			h3 {
+				padding-top: 10px;
+			}
+		</style>
+		<script type="text/javascript">
+			function $(id) {
+				return document.getElementById(id);
+			}
+
+			function mover() {
+				$("mybody").style.background = "#99cc66";
+				$("image").src = "image22.jpg";
+			}
+
+			function mout() {
+				$("mybody").style.background = "#00cc99";
+				$("image").src = "image21.jpg";
+			}
+
+			function mdown() {
+				form1.mtext.value = "按下鼠标";
+			}
+
+			function mclick() {
+				form1.mtext.value = "单击鼠标";
+				$("mybody").style.background = "#00ccaa";
+				$("image").src = "image23.jpg";
+			}
+
+			function mdclick() {
+				form1.mtext.value = "双击鼠标";
+				$("mybody").style.background = "#aaccff";
+				$("image").src = "image24.jpg";
+			}
+		</script>
+	</head>
+	<body>
+		<div id="mybody" onmouseover="mover();" onmouseout="mout();" onmousedown="mdown();" onclick="mclick();" ondblclick="mdclick();">
+			<h3 align="center">鼠标动作捕获与响应</h3>
+			<hr size="1" color="white">
+			<form action="" method="" name="form1">
+				<input type="text" id="mtext" value="" />
+			</form>
+			<img src="image21.jpg" id="image" width="200px" height="100px" title="">
+		</div>
+	</body>
+</html>
+
