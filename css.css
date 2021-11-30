@@ -1,0 +1,29 @@
+/*基本信息*/
+body{font:12px Tahoma; 
+    margin:0px; text-align:center; 
+    background:#FFFFFF;}
+/*页面样式*/
+#webpage{width:100%;}
+/*页面头部样式*/
+#head{width: 800px; 
+    margin:O auto; 
+    height :100px; 
+    background:#FFCC99;}
+/*折页面主体样式*/
+#mainbody{ width:100%; 
+    margin: 8px auto; }
+#sidebar{ background: #99CC33; 
+    width:25%; 
+    text-align:left; 
+    float:left;
+    overflow:hidden;}
+#main{ background: #66FF66; 
+    width:75% ; 
+    text-align:left; 
+    float:right;
+    overflow:hidden;}
+#footer{ margin:0 auto; 
+    width: 800px; 
+    height:50px; 
+    background:#00FFFF; 
+    clear:both; }

@@ -1,0 +1,39 @@
+*{
+	margin: 0 auto;
+	font-weight: bolder;
+	font-size: 28px;
+	line-height: 1.5em;
+}
+#container{
+	width: 900px;
+	margin: 0 auto;
+}
+#header{
+	height: 70px;
+	background-color: #ccffcc;
+	margin-bottom: 8px;
+}
+#nav{
+	height: 40px;
+	background-color: #51fc51;
+	margin-bottom: 8px;
+}
+#maincontent{margin-bottom: 8px;}
+#main{
+	float: left;
+	width: 164px;
+	height: 400px;
+	background-color: #ccffcc;
+}
+#side{
+	float: right;
+	width:73px ;
+	height: 400px;
+	background-color: #e4e679;
+}
+.clearfloat{clear: both;}
+#footer{
+	height: 70px;
+	background-color: #ccffcc;
+	border-top: 8px solid white;
+}
